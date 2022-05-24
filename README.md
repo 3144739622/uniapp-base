@@ -34,7 +34,7 @@ UI框架使用sass对样式进行预处理,本项目使用Vant 2.x 沿用sass预
 ### 图片图标
 ```
 图片图标文件尽量使用七牛云存储
-地址 https://portal.qiniu.com/kodo/bucket/resource/upload?bucketName=pisen-power
+地址 
 ```
 
 ### 请求拦截提示
