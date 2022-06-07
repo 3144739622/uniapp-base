@@ -130,9 +130,9 @@ module.exports = {
     // self-closing问题
     "vue/html-self-closing": ["error", {
       "html": {
-        "void": "never",
-        "normal": "any",
-        "component": "any"
+        "void": "any",
+        "normal": "always",
+        "component": "always"
       },
       "svg": "always",
       "math": "always"
@@ -147,9 +147,10 @@ module.exports = {
     "vue/attributes-order": ["error", {
       "order": [
         "EVENTS",
+        "LIST_RENDERING",
+        "BINDING",
         "DEFINITION",
         "CONDITIONALS",
-        "LIST_RENDERING",
         "RENDER_MODIFIERS",
         "GLOBAL",
         "UNIQUE",
@@ -176,12 +177,11 @@ module.exports = {
         "data",
         "computed",
         "watch",
-        "methods",
         "LIFECYCLE_HOOKS",
+        "methods",
         ["template", "render"],
         "renderError"
       ]
     }]
   }
 }
-
